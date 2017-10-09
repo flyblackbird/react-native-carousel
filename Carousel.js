@@ -7,11 +7,12 @@ var {
   Text,
   View,
 } = require('react-native');
+const createReactClass = require('create-react-class');
 
 var TimerMixin = require('react-timer-mixin');
 var CarouselPager = require('./CarouselPager');
 
-var Carousel = React.createClass({
+var Carousel = createReactClass({
   mixins: [TimerMixin],
 
   getDefaultProps() {
