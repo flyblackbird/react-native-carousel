@@ -3,8 +3,9 @@ var {
   View,
   ViewPagerAndroid,
 } = require('react-native');
+const createReactClass = require('create-react-class');
 
-var CarouselPager = React.createClass({
+var CarouselPager = createReactClass({
 
   scrollToPage(page, animated) {
     if (typeof animated === 'undefined') {
